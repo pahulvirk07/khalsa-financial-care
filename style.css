@@ -23,11 +23,23 @@ header img {
     margin-bottom: 20px; /* Spacing below logo */
 }
 
-section {
+.container {
+    display: flex; /* Create a flex container */
+    max-width: 1200px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
+}
+
+.text-column {
+    flex: 2; /* Take up 2 parts of the space */
     padding: 30px 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: auto; /* Center section on the page */
+}
+
+.image-column {
+    flex: 1; /* Take up 1 part of the space */
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column; /* Arrange images in a column */
+    align-items: center; /* Center align images */
 }
 
 section h2 {
@@ -58,4 +70,9 @@ a {
 
 a:hover {
     text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.image-column img {
+    margin-bottom: 20px; /* Spacing between images */
+    border-radius: 8px; /* Rounded corners for images */
 }
