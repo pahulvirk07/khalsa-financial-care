@@ -2,17 +2,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #83f28f; /* Changed Background Color */
+  background: linear-gradient(to bottom, #d4edda, #83f28f); /* Gradient from light green to medium green */
 }
 
 header {
-  background-color: #008631; /* Changed Header Color */
+  background-color: #155724; /* Dark green */
   color: white;
   text-align: center;
   padding: 20px;
 }
 
 section {
+  background-color: #c3e6cb; /* Light green */
   padding: 20px;
   text-align: center;
 }
