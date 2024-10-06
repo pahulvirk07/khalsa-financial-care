@@ -27,11 +27,14 @@ header img {
     display: flex; /* Create a flex container */
     max-width: 1200px; /* Maximum width for the container */
     margin: auto; /* Center the container */
+    flex-direction: row; /* Align columns in a row */
 }
 
 .text-column {
     flex: 2; /* Take up 2 parts of the space */
     padding: 30px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: add shadow for depth */
+    background-color: #ffffff; /* White background for text column */
 }
 
 .image-column {
@@ -40,6 +43,8 @@ header img {
     display: flex;
     flex-direction: column; /* Arrange images in a column */
     align-items: center; /* Center align images */
+    background-color: #f7f7f7; /* Light gray background for image column */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: add shadow for depth */
 }
 
 section h2 {
