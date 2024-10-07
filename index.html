@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khalsa Financial Care</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure this links to your CSS file -->
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Merriweather', serif;
             margin: 0;
             padding: 0;
-            background-color: #83f28f; /* Changed Background Color */
+            background-color: #f0f4f7; /* Neutral Background */
         }
 
         header {
-            background-color: #008631; /* Changed Header Color */
+            background-color: #008631; /* Header Color */
             color: white;
             text-align: center;
             padding: 20px;
@@ -32,77 +33,163 @@
             font-weight: bold;
         }
 
+        /* Contact Links */
+        .contact-links {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            background-color: #008631;
+            color: white;
+        }
+
+        .contact-links a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        /* Main Sections */
         section {
-            display: flex; /* Use flexbox for layout */
-            padding: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .mission-section {
+            background-color: #e0f8e4;
+        }
+
+        .workshops-section {
+            background-color: #f7f9fc;
+        }
+
+        .approach-section {
+            background-color: #f4f1d6;
         }
 
         .text-column {
-            flex: 1; /* Left column for text */
-            padding-right: 20px; /* Spacing between columns */
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #006400;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
         }
 
         .image-column {
-            flex: 1; /* Right column for images */
-            text-align: center; /* Center-align content in the image column */
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-column img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #008631;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Social Media Icons */
+        .social-icons a {
+            font-size: 2em;
+            color: white;
+            margin: 0 15px;
         }
     </style>
 </head>
+
 <body>
+    <!-- Contact Links -->
+    <div class="contact-links">
+        <a href="mailto:khalsafinancialcare@gmail.com">Email</a>
+        <a href="https://www.instagram.com/khalsafinancialcare/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 25px;">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 25px;">
+        </a>
+    </div>
+
+    <!-- Header -->
     <header>
         <h1>Welcome to Khalsa Financial Care!</h1>
         <img src="https://github.com/pahulvirk07/khalsa-financial-care/blob/main/Khalsa%20Financial%20Care%20Logo%20PNG.png?raw=true" alt="Khalsa Financial Care Logo" style="max-width: 200px; height: auto;">
     </header>
 
+    <!-- Navigation -->
     <nav>
         <a href="#mission">Our Mission</a>
         <a href="#workshops">Workshops</a>
-        <a href="#curriculum">Curriculum</a>
+        <a href="#approach">Our Approach</a>
         <a href="news1.html">AI Feature 1</a>
         <a href="news2.html">AI Feature 2</a>
         <a href="news3.html">AI Feature 3</a>
     </nav>
 
-    <section>
+    <!-- Our Mission Section -->
+    <section class="mission-section" id="mission">
         <div class="text-column">
             <h2>Our Mission</h2>
             <p>
-                At Khalsa Financial Care, our mission is to empower new Punjabi immigrants with the financial knowledge and tools necessary to thrive in America. We provide accessible and culturally relevant financial literacy education.
+                At Khalsa Financial Care, our mission is to empower new Punjabi immigrants with the financial knowledge and tools necessary to thrive in America. We envision a community where every new immigrant is equipped with the knowledge to make informed financial decisions.
+                By providing education on essential topics such as budgeting, saving, investing, and retirement planning, we aim to bridge the knowledge gap and foster financial independence.
             </p>
-            
-            <h2>Our Story</h2>
-            <p>
-                Founded by Pahul Virk and Amrit Mann, we understand the unique challenges faced by immigrant families. Our personal experiences have highlighted the urgent need for financial literacy among new arrivals. This inspired us to create an organization that helps individuals navigate their financial journeys with confidence.
-            </p>
-            
-            <h2>Our Vision</h2>
-            <p>
-                We envision a community where every new immigrant is equipped with the knowledge to make informed financial decisions. By providing education on essential topics such as budgeting, saving, investing, and retirement planning, we aim to bridge the knowledge gap and foster financial independence.
-            </p>
-            
-            <h2>Our Approach</h2>
-            <ul>
-                <li><strong>Workshops:</strong> We host regular workshops designed to cover a range of financial topics. These sessions are interactive and tailored to meet the specific needs of our community.</li>
-                <li><strong>Resources:</strong> We provide easy-to-understand materials and resources that participants can take home, ensuring they have ongoing support and information at their fingertips.</li>
-                <li><strong>One-on-One Guidance:</strong> Recognizing that each individual’s financial situation is unique, we offer personalized guidance to address specific concerns and goals.</li>
-            </ul>
-
-            <h2>Stay Connected</h2>
-            <p>
-                Follow us on Instagram <a href="https://www.instagram.com/khalsafinancialcare/" target="_blank">@khalsafinancialcare</a> and on X <a href="https://twitter.com/khalsafinancial" target="_blank">@khalsafinancial</a> to stay updated on our latest workshops, resources, and success stories. By staying connected, you can also access valuable tips and information that will help you on your financial journey.
-            </p>
-
-            <h2>Contact Us</h2>
-            <p>
-                For more information or to register for our workshops, visit our website or contact us directly at <a href="mailto:khalsafinancialcare@gmail.com">khalsafinancialcare@gmail.com</a>. We are here to help you take control of your financial future.
-            </p>
-        </div>
-
-        <div class="image-column">
-            <h2>Images</h2>
-            <p>Add your images here.</p>
-            <!-- You can add images later -->
         </div>
     </section>
+
+    <!-- Workshops Section -->
+    <section class="workshops-section" id="workshops">
+        <div class="text-column">
+            <h2>Workshops</h2>
+            <p>We host regular workshops covering a range of financial topics, specifically tailored to meet the needs of our community. These sessions are interactive, ensuring participants gain practical knowledge they can apply immediately.</p>
+        </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section class="approach-section" id="approach">
+        <div class="text-column">
+            <h2>Our Approach</h2>
+            <ul>
+                <li><strong>Workshops:</strong> Interactive sessions covering budgeting, investing, and more.</li>
+                <li><strong>Resources:</strong> Easy-to-understand materials to support continued learning.</li>
+                <li><strong>One-on-One Guidance:</strong> Personalized support to help individuals reach their financial goals.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Image Section -->
+    <div class="image-column">
+        <h2>Images</h2>
+        <p>Add your images here.</p>
+        <!-- Add images here -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Khalsa Financial Care. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
