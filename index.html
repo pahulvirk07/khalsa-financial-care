@@ -19,23 +19,36 @@
             color: white;
             text-align: center;
             padding: 20px;
+            position: relative; /* Added to position the immigrant count */
         }
 
+        /* Immigrant count styling */
+        .immigrant-count {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            color: #f0f4f7; /* Light color for visibility */
+            background-color: #006400; /* Darker green for contrast */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Navigation Styling */
         nav {
-            background-color: #004d1a; /* Darker green for the nav bar */
-            padding: 15px 0;
+            text-align: center;
+            margin: 20px 0;
+            background-color: #004d25; /* Darker green to stand out */
+            padding: 15px;
         }
 
         nav a {
-            margin: 0 15px;
-            color: #ffffff; /* White text color */
+            margin: 0 20px;
+            color: white;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2em;
-        }
-
-        nav a:hover {
-            color: #f0f4f7; /* Light background hover effect */
         }
 
         /* Contact Links */
@@ -122,27 +135,59 @@
             color: white;
             margin: 0 15px;
         }
+
+        /* Image and Description Section */
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .image-container img {
+            max-width: 400px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .image-container .text {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .image-container .text h3 {
+            font-size: 1.5em;
+            color: #006400;
+        }
+
+        .image-container .text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #333;
+        }
     </style>
 </head>
 
 <body>
-
     <!-- Header -->
     <header>
+        <!-- Immigrant Count -->
+        <div class="immigrant-count">
+            Helping 100 Immigrants
+        </div>
         <h1>Welcome to Khalsa Financial Care!</h1>
         <img src="https://github.com/pahulvirk07/khalsa-financial-care/blob/main/Khalsa%20Financial%20Care%20Logo%20PNG.png?raw=true" alt="Khalsa Financial Care Logo" style="max-width: 200px; height: auto;">
+        
         <!-- Contact Links -->
-        <center>
-            <div class="contact-links">
-                <a href="mailto:khalsafinancialcare@gmail.com">Email</a>
-                <a href="https://www.instagram.com/khalsafinancialcare/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 25px;">
-                </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 25px;">
-                </a>
-            </div>
-        </center>
+        <div class="contact-links">
+            <a href="mailto:khalsafinancialcare@gmail.com">Email</a>
+            <a href="https://www.instagram.com/khalsafinancialcare/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 25px;">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 25px;">
+            </a>
+        </div>
     </header>
 
     <!-- Navigation -->
@@ -189,8 +234,20 @@
     <!-- Image Section -->
     <div class="image-column">
         <h2>Images</h2>
-        <p>Add your images here.</p>
-        <!-- Add images here -->
+        <!-- Image and Description -->
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/pahulvirk07/khalsa-financial-care/refs/heads/main/download.jfif" alt="Ceremonial Resolution">
+            <div class="text">
+                <h3>Ceremonial Resolution from the New Jersey General Assembly</h3>
+                <p>
+                    Co-founders <strong>Pahul Virk</strong> and <strong>Amrit Singh</strong> proudly received a prestigious ceremonial resolution from NJ Assemblywoman <strong>Andrea Katz</strong> on behalf of the New Jersey General Assembly, signed by the Speaker and Clerk of the House.
+                    This honor was bestowed in recognition of their outstanding work with Khalsa Financial Care, particularly their dedication to empowering immigrant communities through financial literacy education.
+                </p>
+                <p>
+                    The ceremonial resolution is a mark of distinction, underscoring the impact Khalsa Financial Care has had on hundreds of individuals. It symbolizes not only the acknowledgment of the state government but also the broader importance of their mission to foster financial independence among immigrants.
+                </p>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
