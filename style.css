@@ -1,37 +1,57 @@
+/* Body Styling */
 body {
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
     background-color: #f0f4f7; /* Neutral Background */
 }
- 
+
+/* Header Styling */
 header {
     background-color: #008631; /* Header Color */
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
+header .immigrant-counter {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+header img {
+    margin: 10px auto;
+    display: block;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Navigation Styling */
 nav {
     text-align: center;
-    margin: 20px 0;
+    margin: 0;
     background-color: #006400; /* Dark Green Color */
-    padding: 15px 0; /* Added padding for spacing */
+    padding: 15px 0;
 }
 
 nav a {
     margin: 0 15px;
-    color: white; /* Text color remains white */
+    color: white; /* White text for contrast */
     text-decoration: none;
     font-weight: bold;
 }
-/* Contact Links */
+
+/* Contact Links Styling */
 .contact-links {
     display: flex;
     justify-content: center; /* Centered the contact links */
-    padding: 10px 20px;
-    background-color: #008631;
-    color: white;
+    padding: 10px 0;
+    background-color: #008631; /* Matches header color */
 }
 
 .contact-links a {
@@ -86,18 +106,21 @@ ul li {
     margin: 10px 0;
 }
 
+/* Image Column Styling */
 .image-column {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 20px 0;
 }
 
 .image-column img {
-    max-width: 600px; /* Ensures the image can grow larger */
-    width: 100%;      /* Ensures it takes the full width of its container */
-    height: auto;     /* Keep the aspect ratio */
-    margin-right: 40px; /* Increased right margin */
+    max-width: 45%;
+    height: auto;
+    margin-right: 30px; /* Increased margin for better spacing */
 }
 
+/* Footer Styling */
 footer {
     background-color: #008631;
     color: white;
@@ -105,7 +128,7 @@ footer {
     padding: 20px;
 }
 
-/* Social Media Icons */
+/* Social Media Icons Styling */
 .social-icons a {
     font-size: 2em;
     color: white;
