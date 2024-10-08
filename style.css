@@ -15,15 +15,16 @@ header {
 nav {
     text-align: center;
     margin: 20px 0;
+    background-color: #006400; /* Dark Green Color */
+    padding: 15px 0; /* Added padding for spacing */
 }
 
 nav a {
     margin: 0 15px;
-    color: white;
+    color: white; /* Text color remains white */
     text-decoration: none;
     font-weight: bold;
 }
-
 /* Contact Links */
 .contact-links {
     display: flex;
