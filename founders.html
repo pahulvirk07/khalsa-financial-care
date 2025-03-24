@@ -5,28 +5,81 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Founders | Khalsa Financial Care</title>
-    <meta name='description' content=''>
+    <meta name='description' content='Meet the founders of Khalsa Financial Care, Pahul Virk and Amrit Man.'>
     <meta name='viewport' content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <!-- Stylesheets -->
     <link rel='stylesheet' href='styles/style.css'>
     <link rel='stylesheet' href='styles/navbar.css'>
     <link rel='stylesheet' href='styles/pages.css'>
     <link rel='stylesheet' href='styles/founders.css'>
-    <link rel="icon" href="images/KFC_Logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/kfc_logo.png">
+    
+    <!-- Font Awesome & Google Fonts -->
     <script src="https://kit.fontawesome.com/bfbf24a258.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Consistent color scheme */
+        :root {
+            --primary-color: #0A66C2; /* Blue */
+            --secondary-color: #FFD700; /* Gold */
+            --text-color: #333333;
+            --background-color: #F9F9F9;
+        }
+        
+        body {
+            font-family: 'Noto Serif', serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        .foundersContainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .founder {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .founder img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .founderSubtitle {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <nav>
         <div class="navLeft">
             <a href="index.html" class="navLogo">
                 <div class="navLogoImageContainer">
-                    <img class="navLogoImage" src="images/KFC_Logo.png" alt="Khalsa Financial Care">
+                    <img class="navLogoImage" src="images/kfc_logo.png" alt="Khalsa Financial Care">
                 </div>
                 <div class="navLogoText">
                     <div class="navLogoTextTitle">Khalsa Financial Care</div>
@@ -34,45 +87,41 @@
                 </div>
             </a>
         </div>
-        <div class="navRight">
-        </div>
     </nav>
 
+    <!-- Founders Section -->
     <div class="pageSection firstSection">
         <div class="pageSectionTitle founderTitle">Our Founders</div>
-        <div class="pageSectionContent">
-            <div class="pageSectionContentText foundersContainer">
-                <div class="founder">
-                    <div class="founderLeft">
-                        <div class="pageSectionSubtitle founderSubtitle">Pahul Singh Virk</div>
-                        Hi, my name is Pahul Virk. I co-founded Khalsa Financial Care to bridge the financial literacy gap among immigrants. As a first-generation student, I understand the barriers newcomers face in navigating financial systems. With a passion for finance and technology, I have worked on initiatives that provide free financial education resources and AI-powered tools to assist immigrants in making informed financial decisions.
-                    </div>
-                    <div class="founderRight">
-                        <img src="images/founders/Pahul_S_Virk.png" alt="Pahul Singh Virk">
-                    </div>
+        <div class="pageSectionContent foundersContainer">
+            
+            <div class="founder">
+                <img src="images/founders/Pahul_Virk.jpg" alt="Pahul Virk">
+                <div>
+                    <div class="pageSectionSubtitle founderSubtitle">Pahul Singh Virk</div>
+                    <p>Pahul Virk is the co-founder of Khalsa Financial Care, an initiative dedicated to empowering immigrants through financial literacy. A first-generation student passionate about finance and technology, he has led efforts to educate and support over 100 immigrants. Pahul has also authored a research paper on immigrant financial literacy and actively works in fintech and community service.</p>
                 </div>
-                <div class="founder">
-                    <div class="founderRight">
-                        <img src="images/founders/Amrit_Man.png" alt="Amrit Man">
-                    </div>
-                    <div class="founderLeft">
-                        <div class="pageSectionSubtitle founderSubtitle">Amrit Man</div>
-                        Hi, my name is Amrit Man. I co-founded Khalsa Financial Care with a vision to empower immigrants by providing them with the financial knowledge necessary to thrive. With experience in finance and community outreach, I am dedicated to helping individuals understand banking, credit, and investment strategies that can improve their financial well-being and stability.
-                    </div>
+            </div>
+
+            <div class="founder">
+                <img src="images/founders/Amrit_Man.jpg" alt="Amrit Man">
+                <div>
+                    <div class="pageSectionSubtitle founderSubtitle">Amrit Man</div>
+                    <p>Amrit Man is the co-founder of Khalsa Financial Care, committed to bridging the financial knowledge gap among immigrant communities. With expertise in business and social impact, Amrit has played a crucial role in developing the organization’s financial literacy curriculum and expanding its outreach programs to assist immigrants in navigating financial challenges.</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footerLeft"><i class="fa-regular fa-copyright"></i> Khalsa Financial Care</div>
-        <div class="footerRight">Website by [Your Developer's Name]</div>
+        <div class="footerRight">Website by [Your Name]</div>
     </footer>
 
+    <!-- Scripts -->
     <script src='scripts/script.js'></script>
     <script src='scripts/navbar.js'></script>
     <script src='scripts/pages.js'></script>
-    <script src='scripts/founders.js'></script>
 </body>
 
 </html>
