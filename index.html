@@ -93,23 +93,22 @@
             margin: 10px 0;
         }
 
+        /* Image and text alignment */
         .image-column {
             max-width: 1200px;
             margin: 40px auto;
-            text-align: left;
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            align-items: center; /* Aligns image and text vertically */
+            gap: 40px; /* Adds space between image and text */
         }
 
         .image-column img {
-            max-width: 600px; /* Increased max-width for the image */
-            height: auto;     /* Keep the aspect ratio */
-            margin-right: 40px; /* Increased right margin */
+            max-width: 45%; /* Limits image width */
+            height: auto;
         }
 
         .image-column div {
-            flex: 1;
+            flex: 1; /* Allows text to take up remaining space */
         }
 
         footer {
@@ -134,7 +133,7 @@
         <a href="founders.html">Founders</a>
         <a href="news1.html">Research</a>
         <a href="news3.html">Blog</a>
-         <a href="news2.html">Contact Us</a>
+        <a href="news2.html">Contact Us</a>
     </nav>
 
     <!-- Our Mission Section -->
